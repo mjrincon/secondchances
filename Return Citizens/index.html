@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hello World!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main">
+    <div id="test">
+      <h4>Rewrite the code on line five, so that the greet function returns the expected value.</h4>
+      <pre>
+        function Person(name){
+          this.name = name;
+        }
+
+        Person.prototype.greet = function(otherName){
+          return "Hi " + otherName + ", my name is " + name;
+        }
+      </pre>
+      Select the correct code below.<br>
+      <select name="ab" onchange="(this.selectedIndex === 2)? doSomething(): doNothing();">
+          <option value="-1">--</option>
+          <option value="1">return "Hi" + otherName + ", my name is " + name;</option> 
+          <option value="2">return "Hi " + otherName + ", my name is " + this.name;</option>
+          <option value="3">return "Hi " + otherName + ",my name is " + name;</option>
+      </select>
+
+    </div>
+  </div>
+
+  <script>
+    /*function myFunction() {
+      var nameValue = document.getElementById("uniqueID").value;
+      if (nameValue === 'return "Hi " + otherName + ", my name is " + this.name;') {
+        alert("Correct.")
+      }
+      else
+        alert("Incorrect. Try again.");
+    }*/
+
+    function doSomething() {
+      //if (this.selectedIndex == 1)
+      alert("Correct!");
+    }
+    function doNothing() {
+      alert("Incorrect. Please try again");
+    }
+  </script>
+
+</body>
+</html>
